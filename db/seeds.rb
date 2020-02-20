@@ -16,6 +16,7 @@ end
 9.times do |portfolio|
     Portfolio.create!(
       title: "Portfolio title: #{portfolio}",
+      subtitle: "Portfolio subtitle: #{portfolio}"
       body: "body: Sed ut perspiciatis unde omnis
       iste natus error sit voluptatem accusantium",
       main_image: "https://via.placeholder.com/600x240.png?%20C/O%20https://placeholder.com/",
