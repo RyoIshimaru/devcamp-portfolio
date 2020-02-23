@@ -2,8 +2,6 @@ class PortfoliosController < ApplicationController
   def index
     @portfolio_items = Portfolio.all
   end
-<<<<<<< HEAD
-=======
 
   def new
     @portfolio_item = Portfolio.new
@@ -48,5 +46,4 @@ class PortfoliosController < ApplicationController
       format.html { redirect_to portfolios_url, notice: 'Portfolio item was successfully deleted.' }
     end
   end
->>>>>>> portfolio-feature
 end

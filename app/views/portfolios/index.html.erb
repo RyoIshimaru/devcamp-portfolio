@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-<h1>My Portfolio</h1>
-
-<% @portfolio_items.each do |portfolio| %>
-    <p><%= portfolio.title %></p>
-    <p><%= portfolio.body %></p>
-    <p><%= portfolio.main_image %></p>
-    <%= image_tag portfolio.thumb_image %>
-<% end %>
-=======
 <h1>Portfolio Items</h1>
 
 <%= link_to "Create a new portfolio", new_portfolio_url %>
@@ -20,4 +10,3 @@
   <%= link_to "Edit", edit_portfolio_path(p.id) %>
   <%= link_to "Delete", portfolio_path(p), method: :delete, data: {confirm: 'Are you sure?'} %>
 <% end %>
->>>>>>> portfolio-feature
